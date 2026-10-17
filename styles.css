@@ -34,3 +34,9 @@ nav a{padding:12px}
 .footer-logo img{display:block;width:66px;height:auto}
 .footer-logo span{font-size:11px;line-height:1.5}
 @media(max-width:650px){.brand{gap:10px}.brand-logo{width:58px}.brand-name{font-size:10px}.footer-logo img{width:58px}}
+
+/* Consistent portrait shapes at sizes suited to the supplied images. */
+.member .portrait,.members.chairs .portrait{width:180px;max-width:100%;height:auto;aspect-ratio:1;border-radius:50%;margin:0 auto;background:#e8ebe3}
+.members.chairs .portrait{width:200px}
+.member .portrait img{width:100%;height:100%;object-fit:cover;object-position:center center;filter:none}
+@media(max-width:650px){.member .portrait,.members.chairs .portrait{width:150px;height:auto;aspect-ratio:1}}
